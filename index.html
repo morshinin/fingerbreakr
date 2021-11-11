@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fingerbreakr</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header__brand">
+		  <h1>Fingerbreakr</h1>
+		  <p>Very simple touch typing tool</p>
+		</div>
+		<div class="header__settings fz-xs ta-r">
+			<label for="toggleKbd">Hide keyboard</label>
+			<input type="checkbox" name="toggleKbd" id="toggleKbd">
+			<div class="form-group">
+				<strong>Language</strong>
+				<label for="en">En</label>
+				<input type="radio" id="en" name="language" checked="checked">
+				<label for="ru">Ru</label>
+				<input type="radio" id="ru" name="language">
+			</div>
+			<a href="#0" id="helpBtn">How to use</a>
+		</div>
+	</header>
+	<main>
+		<div id="square"></div>
+		<div id="letterBox"></div>
+		<div id="correctBox"></div>
+		<div id="errorCountBox"></div><img id="kbdImg" src="http://www.neumeka.ru/images/uchebnik/computer/programs/word/keyboard/08.png" alt=""/>
+	</main>
+	<footer class="fz-xs ta-c"> <small>Author: <a href="http://morshinin.ru">Mikhail Morshinin</a></small></footer>
+	<dialog class="help-message" id="helpMsg">
+		<h2>How to use</h2>
+		<ol>
+			<li>Place your fingers like on the image below</li>
+			<li>Look at the keyboard on your screen</li>
+			<li>Press buttons</li>
+			<li>Hide keyboard then you feel that you remembered all characters</li>
+		</ol>
+		<button id="okBtn">Got it</button>
+	</dialog>
+	<audio id="typewriter" src="audio/typewriter-key-1.wav"></audio>
+	<audio id="wrong" src="audio/wrong-answer-soundmp3.mp3"></audio>
+	<script src="js/main.js"></script>
+</body>
+</html>
